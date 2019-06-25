@@ -93,6 +93,29 @@ or if you do not have root permissions:
 
     python setup.py install --home=$HOME
 
+## Running with docker-compose
+
+Instead of installing Python and other dependencies on your main operating
+system, you can instead use Docker to run Dosage.
+
+To do so, first install Docker, and check this Git repo out into a folder of
+your choice.
+
+To use Dosage, you can run the following command from within that folder:
+
+    $ docker-compose run dosage ./dosage <regular dosage options>
+
+So fetching the latest XKCD would be:
+
+    $ docker-compose run dosage ./dosage Xkcd
+
+### Updating docker-compose image
+
+After fetching updates to Dosage with Git, it is recommended to rebuild the
+Docker image, this is done by running this command:
+
+    $ docker-compose build
+
 ## Reporting Bugs
 
 You can report bugs, patches or requests at the [GitHub issue
