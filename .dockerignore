@@ -1,0 +1,16 @@
+# Ignore all the files and folders we do not need while *building* the Docker
+# images. Same syntax as .gitignore.
+*.orig
+*.pyc
+*.pyo
+/.cache
+/.coverage
+/.eggs
+/.tox
+/Comics
+/build
+/dist
+/dosage.egg-info
+/dosage.prof
+/scripts/*.json
+/testresults.txt
